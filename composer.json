@@ -1,0 +1,33 @@
+{
+  "name": "mosaxiv/cakephp-secure-target-blank",
+  "description": "SecureTargetBlank plugin for CakePHP",
+  "type": "cakephp-plugin",
+  "license": "MIT",
+  "require": {
+    "cakephp/cakephp": "^3.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7|^6.0",
+    "cakephp/cakephp-codesniffer": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SecureTargetBlank\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Noopener\\Test\\": "tests",
+      "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+    }
+  },
+  "scripts": {
+    "check": [
+      "@test",
+      "@cs-check"
+    ],
+    "cs-check": "phpcs --colors -p --standard=vendor/cakephp/cakephp-codesniffer/CakePHP ./src ./tests",
+    "cs-fix": "phpcbf --colors --standard=vendor/cakephp/cakephp-codesniffer/CakePHP ./src ./tests",
+    "test": "phpunit --colors=always"
+  }
+}
