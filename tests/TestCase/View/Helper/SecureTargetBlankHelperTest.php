@@ -21,5 +21,3 @@ class SecureTargetBlankHelperTest extends TestCase
         $this->assertTrue(true);
     }
 }
-
-
