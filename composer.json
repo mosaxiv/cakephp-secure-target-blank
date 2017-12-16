@@ -17,7 +17,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Noopener\\Test\\": "tests",
+      "SecureTargetBlank\\Test\\": "tests",
       "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
     }
   },
