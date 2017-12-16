@@ -2,12 +2,10 @@
 
 namespace SecureTargetBlank\View\Helper;
 
-use Cake\View\Helper\HtmlHelper;
-
 /**
  * {@inheritdoc}
  */
-class SecureTargetBlankHelper extends HtmlHelper
+class HtmlHelper extends \Cake\View\Helper\HtmlHelper
 {
     /**
      * {@inheritdoc}

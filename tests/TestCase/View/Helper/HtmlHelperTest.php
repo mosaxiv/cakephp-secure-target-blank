@@ -4,7 +4,7 @@ namespace SecureTargetBlank\Test\TestCase\View\Helper;
 
 use Cake\TestSuite\TestCase;
 
-class SecureTargetBlankHelperTest extends TestCase
+class HtmlHelperTest extends TestCase
 {
     public function setUp()
     {
