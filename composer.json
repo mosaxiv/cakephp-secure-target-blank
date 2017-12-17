@@ -1,8 +1,18 @@
 {
   "name": "mosaxiv/cakephp-secure-target-blank",
-  "description": "SecureTargetBlank plugin for CakePHP",
+  "description": "Adds noopener and noreferrer to target _blank in Html Helper.",
   "type": "cakephp-plugin",
+  "keywords": [
+      "cakephp",
+      "plugin",
+      "secure"
+  ],
+  "homepage": "https://github.com/mosaxiv/cakephp-secure-target-blank",
   "license": "MIT",
+  "support": {
+     "issues": "https://github.com/mosaxiv/cakephp-secure-target-blank/issues",
+     "source": "https://github.com/mosaxiv/cakephp-secure-target-blank"
+  },
   "require": {
     "cakephp/cakephp": "^3.4"
   },
