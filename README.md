@@ -52,7 +52,7 @@ Use the `Html->link()` with `[target => "_blank"]`, `rel="noopener noreferrer"` 
 
 Html Helper:
 ```php
-$this->Html->link('test', 'http://example.com', ['target' => '_blank']
+$this->Html->link('test', 'http://example.com', ['target' => '_blank'])
 ```
 
 will render this HTML:
