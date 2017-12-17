@@ -3,8 +3,6 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 [![Build Status](https://travis-ci.org/mosaxiv/cakephp-secure-target-blank.svg?branch=master)](https://travis-ci.org/mosaxiv/cakephp-secure-target-blank)
 
-Adds noopener and noreferrer to target _blank in Html Helper.
-
 If you use the `target="_blank"` attribute on a link, you are leaving your users open to a very simple phishing attack. Adding `rel="noopener noreferrer"` on those links will prevent this vulnerability.  
 [Further reading.](https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/)
 
