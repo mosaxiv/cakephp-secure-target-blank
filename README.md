@@ -60,3 +60,7 @@ will render this HTML:
 '<a href="http://example.com" target="_blank" rel="noopener noreferrer">test</a>'
 
 ```
+
+# translate
+
+[日本語説明](https://qiita.com/mosaxiv/items/e279c836ad5376e24584)
