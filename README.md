@@ -50,6 +50,8 @@ class AppView extends View
 
 Use the `Html->link()` with `[target => "_blank"]`, `rel="noopener noreferrer"` will be added.
 
+#### Basic
+
 Html Helper:
 ```php
 $this->Html->link('test', 'http://example.com', ['target' => '_blank'])
@@ -58,7 +60,6 @@ $this->Html->link('test', 'http://example.com', ['target' => '_blank'])
 will render this HTML:
 ```html
 '<a href="http://example.com" target="_blank" rel="noopener noreferrer">test</a>'
-
 ```
 
 #### `secureBlank` Option
