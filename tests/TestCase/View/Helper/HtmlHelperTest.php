@@ -53,5 +53,13 @@ class HtmlHelperTest extends TestCase
         $expected = $this->Html->link('test_title', ['controller' => 'test'], ['target' => '_blank', 'rel' => ['nofollow', 'test']]);
         $actual = '<a href="/test/index" target="_blank" rel="nofollow test noopener noreferrer">test_title</a>';
         $this->assertEquals($expected, $actual);
+
+        $expected = $this->Html->link('test_title', ['controller' => 'test'], ['target' => '_blank', 'secureBlank' => false]);
+        $actual = '<a href="/test/index" target="_blank">test_title</a>';
+        $this->assertEquals($expected, $actual);
+
+        $expected = $this->Html->link('test_title', ['controller' => 'test'], ['target' => '_blank', 'secureBlank' => false, 'rel' => 'nofollow']);
+        $actual = '<a href="/test/index" target="_blank" rel="nofollow">test_title</a>';
+        $this->assertEquals($expected, $actual);
     }
 }

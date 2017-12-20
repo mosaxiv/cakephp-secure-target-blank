@@ -3,7 +3,7 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 [![Build Status](https://travis-ci.org/mosaxiv/cakephp-secure-target-blank.svg?branch=master)](https://travis-ci.org/mosaxiv/cakephp-secure-target-blank)
 
-If you use the `target="_blank"` attribute on a link, you are leaving your users open to a very simple phishing attack. Adding `rel="noopener noreferrer"` on those links will prevent this vulnerability.  
+If you use the `target="_blank"` attribute on a link, you are leaving your users open to a very simple phishing attack. Adding `rel="noopener noreferrer"` on those links will prevent this vulnerability.
 [Further reading.](https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/)
 
 
@@ -50,6 +50,8 @@ class AppView extends View
 
 Use the `Html->link()` with `[target => "_blank"]`, `rel="noopener noreferrer"` will be added.
 
+#### Basic
+
 Html Helper:
 ```php
 $this->Html->link('test', 'http://example.com', ['target' => '_blank'])
@@ -58,7 +60,18 @@ $this->Html->link('test', 'http://example.com', ['target' => '_blank'])
 will render this HTML:
 ```html
 '<a href="http://example.com" target="_blank" rel="noopener noreferrer">test</a>'
+```
 
+#### `secureBlank` Option
+
+Html Helper:
+```php
+$this->Html->link('test_title', ['controller' => 'test'], ['target' => '_blank', 'secureBlank' => false]);
+```
+
+will render this HTML:
+```html
+<a href="/test/index" target="_blank">test_title</a>
 ```
 
 # translate

@@ -12,7 +12,9 @@ class HtmlHelper extends \Cake\View\Helper\HtmlHelper
      */
     public function link($title, $url = null, array $options = [])
     {
-        if (isset($options['target']) && $options['target'] === '_blank') {
+        $secure = $options['secureBlank'] ?? true;
+
+        if (isset($options['target']) && $options['target'] === '_blank' && $secure) {
             $options['rel'] = $options['rel'] ?? [];
             if (is_string($options['rel'])) {
                 $options['rel'] = explode(' ', $options['rel']);
