@@ -14,7 +14,7 @@
      "source": "https://github.com/mosaxiv/cakephp-secure-target-blank"
   },
   "require": {
-    "cakephp/cakephp": "^3.4"
+    "cakephp/cakephp": "~3.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.7|^6.0",
