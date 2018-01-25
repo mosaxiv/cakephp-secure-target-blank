@@ -73,7 +73,3 @@ will render this HTML:
 ```html
 <a href="/test/index" target="_blank">test_title</a>
 ```
-
-# translate
-
-[日本語説明](https://qiita.com/mosaxiv/items/e279c836ad5376e24584)
